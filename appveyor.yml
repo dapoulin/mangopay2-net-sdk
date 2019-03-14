@@ -62,7 +62,7 @@ build:
 artifacts:
   # pushing all *.nupkg files in build directory recursively
   - path: '**\*.nupkg'
-  - name: mangopay2-sdk
+    name: mangopay2-sdk
 
 
 #---------------------------------#
