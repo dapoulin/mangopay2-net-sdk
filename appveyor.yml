@@ -60,9 +60,9 @@ build:
 #---------------------------------#
 
 artifacts:
-
   # pushing all *.nupkg files in build directory recursively
   - path: '**\*.nupkg'
+  - name: mangopay2-sdk
 
 
 #---------------------------------#
@@ -74,11 +74,7 @@ deploy:
   - provider: NuGet
     api_key:
       secure: wmd6ZK753HG9JgzWxRG5iIQrNYJg0tANj5p2avUDg+hlIT2l+HRIgF4H09RNjYw7
-    artifact: '**\*.nupkg'
-     on:
-    branch: appveyor-ci-integration
-
-
+    artifact: mangopay-sdk
 
 #---------------------------------#
 #        global handlers          #
