@@ -1,3 +1,9 @@
+before_build:
+  - nuget restore mangopay2-net-sdk.sln
+
+build:
+  project: mangopay2-net-sdk.sln
+  
 deploy:
   provider: NuGet
   api_key:
